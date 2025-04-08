@@ -1,5 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import dev from "../src/assets/images/dev.png"
+import myphoto from "../src/assets/images/IMG_0156.jpg"
+import shooping from "../src/assets/images/shooping.png"
+import weather from "../src/assets/images/weather.png"
+
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -85,7 +90,7 @@ function App() {
                   <span className="absolute top-0 left-0 w-full h-full bg-white opacity-0 group-hover:opacity-10 transition-opacity"></span>
                   <i className="fas fa-envelope mr-2"></i> Contact Me
                 </a>
-                <a href="/youssef hamada.docx" download className="group relative px-6 py-3 overflow-hidden rounded-full border border-[#0ea5e9] text-[#0ea5e9] hover:shadow-[#0ea5e9]/10 hover:shadow-lg transition-all">
+                <a href="/youssef-hamada.docx" download="youssef-hamada.docx" className="group relative px-6 py-3 overflow-hidden rounded-full border border-[#0ea5e9] text-[#0ea5e9] hover:shadow-[#0ea5e9]/10 hover:shadow-lg transition-all">
                   <span className="absolute top-0 left-0 w-full h-full bg-[#0ea5e9] opacity-0 group-hover:opacity-5 transition-opacity"></span>
                   <i className="fas fa-download mr-2"></i> Download CV
                 </a>
@@ -111,7 +116,7 @@ function App() {
                 <div className="relative bg-[#111827] rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-300 group border border-[#1e1e2a]">
                   <div className="w-64 h-64 sm:w-80 sm:h-80 mx-auto overflow-hidden">
                     <img 
-                      src="/IMG_0156.jpg" 
+                      src={myphoto} 
                       alt="Youssef Hamada" 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       onError={(e) => {
@@ -217,7 +222,7 @@ function App() {
             >
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/shooping.png" 
+                  src={shooping} 
                   alt="E-Commerce Platform"
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                   onError={(e) => {
@@ -257,7 +262,7 @@ function App() {
             >
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/dev.png" 
+                  src={dev} 
                   alt="portfolio"
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                   onError={(e) => {
@@ -296,7 +301,7 @@ function App() {
             >
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/weather.png" 
+                  src={weather} 
                   alt="weather website"
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                   onError={(e) => {
