@@ -90,7 +90,7 @@ function App() {
                   <span className="absolute top-0 left-0 w-full h-full bg-white opacity-0 group-hover:opacity-10 transition-opacity"></span>
                   <i className="fas fa-envelope mr-2"></i> Contact Me
                 </a>
-                <a href={`${import.meta.env.BASE_URL}youssef-hamada.docx`} download className="group relative px-6 py-3 overflow-hidden rounded-full border border-[#0ea5e9] text-[#0ea5e9] hover:shadow-[#0ea5e9]/10 hover:shadow-lg transition-all">
+                <a href={`${import.meta.env.BASE_URL}youssef hamada.pdf`} download className="group relative px-6 py-3 overflow-hidden rounded-full border border-[#0ea5e9] text-[#0ea5e9] hover:shadow-[#0ea5e9]/10 hover:shadow-lg transition-all">
                   <span className="absolute top-0 left-0 w-full h-full bg-[#0ea5e9] opacity-0 group-hover:opacity-5 transition-opacity"></span>
                   <i className="fas fa-download mr-2"></i> Download CV
                 </a>
